@@ -19,7 +19,7 @@ Takes two parameters one, the content, the other, a legend of preferred keys and
 
 ```
 var legend = {
-	"token": ["access_token", "access", "consumer_token", "consumer""],
+	"token": ["access_token", "access", "consumer_token", "consumer"],
     "color": ["colour"],
     "flavor": ["flavour"],
     "labor": ["labour"],
