@@ -52,4 +52,16 @@ describe("standardize", function(){
         expect(standardized).to.have.property('url');
         expect(standardized).to.have.property('pet');
     });
+    it("should be able to accept empty content object", function(){
+        var legend = {
+            "color": "colour",
+            "flavor": ["flavour"],
+            "labor": ["labour"],
+            "url": ["uri", "link"],
+            "hello": ["world", "hello-world", "hello world", "sup", "sup-bro"]
+        };
+        var content = {};
+        var standardized = standardize(content, legend);
+        expect(standardized).to.be.an("object");
+    });
 });
